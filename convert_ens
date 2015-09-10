@@ -1,0 +1,10 @@
+#!/bin/sh
+rm -rf ./DAT/ENS
+cp -r ./ENS ./DAT
+list=`find ./ENS -name "*.ens"`
+echo ">> reformat and move ensight files:"
+for file in $list
+do
+sed '1,6d' $file > ./DAT/$file
+echo $file
+done

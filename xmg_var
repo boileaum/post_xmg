@@ -1,0 +1,19 @@
+#!/bin/sh
+if [ $1 = -batch ]
+then
+ mode='-hardcopy'
+ var=$2
+ echo "Using batch mode for $cmdfile."
+else
+ var=$1
+ echo "Using xmgrace interactive session for $cmdfile."
+fi
+
+outputfile=./EPS/$var.eps
+echo "Print file:"  $outputfile
+
+#cat ./CMD/$var.cmd ./PAR/$var.par > batchfile
+cat ./PAR/$var.par ./CMD/$var.cmd > batchfile
+
+xmgrace $mode -nosafe -graph 0 -autoscale none  -batch ./batchfile -printfile $outputfile
+rm ./batchfile

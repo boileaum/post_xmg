@@ -1,0 +1,5 @@
+#!/bin/sh
+rm -f EPS/*
+echo "./EPS cleaned"
+rm -f PDF/*
+echo "./PDF cleaned"

@@ -1,0 +1,9 @@
+#!/bin/sh
+list=`find . -name "*.eps"`
+echo ">> Converting .eps files:"
+for file in $list
+do
+epstopdf $file
+echo $file
+done
+echo ">> into pdf files"

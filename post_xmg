@@ -1,0 +1,10 @@
+#!/bin/bash
+echo ">> Cleaning old files"
+./clean_all
+
+echo ">> Postprocessing profiles in the wake"
+./xmg_var -batch mygraph
+
+cd EPS
+../convert_eps
+mv *.pdf ../PDF
