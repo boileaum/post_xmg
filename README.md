@@ -19,7 +19,7 @@ This tool helps you to post process effectively your data using [xmgrace](http:/
 2. Use ``./convert_ens`` to convert ensight ascii data file from directory ``./ENS`` to ``./DAT`` in xmgrace compatible format.
 
 ### Tips :
-1. After changing your layout in xmgrace, save your new parameters in ``./PAR/mygraph.par``
+1. After changing your layout using xmgrace GUI, save your new parameters in ``./PAR/mygraph.par``
 2. write as many ``./CMD/mygraph.cmd`` and ``./PAR/mygraph.par`` files as you need!
 3. Add them to the ``./post_xmg`` script to perform a batch postprocessing
 
