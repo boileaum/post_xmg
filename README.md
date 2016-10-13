@@ -23,6 +23,3 @@ This tool helps you to post process effectively your data using [xmgrace](http:/
 2. write as many ``./CMD/mygraph.cmd`` and ``./PAR/mygraph.par`` files as you need!
 3. Add them to the ``./post_xmg`` script to perform a batch postprocessing
 
-## Any question ?
-
-Matthieu Boileau ([matthieu.boileau@cnrs.fr](mailto:matthieu.boileau@cnrs.fr))
